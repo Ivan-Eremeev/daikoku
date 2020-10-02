@@ -90,43 +90,37 @@ h1, h2, h3 {
 	font-family: "SuezOne";
 	font-weight: normal;
 	font-style: normal;
-	src: url("../fonts/SuezOne-Regular.eot");
-	src: url("../fonts/SuezOne-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/SuezOne-Regular.woff") format("woff"), url("../fonts/SuezOne-Regular.woff2") format("woff2"), url("../fonts/SuezOne-Regular.ttf") format("truetype"), url("../fonts/SuezOne-Regular.svg") format("svg");
+	src: font-url("../fonts/SuezOne-Regular.ttf");
 }
 @font-face {
 	font-family: "Muli";
 	font-weight: normal;
 	font-style: normal;
-	src: url("../fonts/Muli-Regular.eot");
-	src: url("../fonts/Muli-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli-Regular.woff") format("woff"), url("../fonts/Muli-Regular.woff2") format("woff2"), url("../fonts/Muli-Regular.ttf") format("truetype"), url("../fonts/Muli-Regular.svg") format("svg");
+	src: font-url("../fonts/Muli-Regular.ttf");
 }
 @font-face {
 	font-family: "Muli";
 	font-weight: bold;
 	font-style: normal;
-	src: url("../fonts/Muli-Bold.eot");
-	src: url("../fonts/Muli-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli-Bold.woff") format("woff"), url("../fonts/Muli-Bold.woff2") format("woff2"), url("../fonts/Muli-Bold.ttf") format("truetype"), url("../fonts/Muli-Bold.svg") format("svg");
+	src: font-url("../fonts/Muli-Bold.ttf");
 }
 @font-face {
 	font-family: "BebasNeue";
 	font-weight: normal;
 	font-style: normal;
-	src: url("../fonts/BebasNeueRegular.eot");
-	src: url("../fonts/BebasNeueRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeueRegular.woff") format("woff"), url("../fonts/BebasNeueRegular.woff2") format("woff2"), url("../fonts/BebasNeueRegular.ttf") format("truetype"), url("../fonts/BebasNeueRegular.svg") format("svg");
+	src: font-url("../fonts/BebasNeueRegular.ttf");
 }
 @font-face {
 	font-family: "BebasNeue";
 	font-weight: bold;
 	font-style: normal;
-	src: url("../fonts/BebasNeueBold.eot");
-	src: url("../fonts/BebasNeueBold.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeueBold.woff") format("woff"), url("../fonts/BebasNeueBold.woff2") format("woff2"), url("../fonts/BebasNeueBold.ttf") format("truetype"), url("../fonts/BebasNeueBold.svg") format("svg");
+	src: font-url("../fonts/BebasNeueBold.ttf");
 }
 @font-face {
 	font-family: "Aventura";
 	font-weight: bold;
 	font-style: normal;
-	src: url("../fonts/Aventura-Bold.eot");
-	src: url("../fonts/Aventura-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Aventura-Bold.woff") format("woff"), url("../fonts/Aventura-Bold.woff2") format("woff2"), url("../fonts/Aventura-Bold.ttf") format("truetype"), url("../fonts/Aventura-Bold.svg") format("svg");
+	src: font-url("../fonts/Aventura-Bold.ttf");
 }
 html.lock {
 	overflow: hidden;
@@ -259,11 +253,12 @@ h2 {
 .welcome .wrapper {
 	display: flex;
 	justify-content: flex-end;
+	position: relative;
 }
 .welcome_man {
 	position: absolute;
 	bottom: 0;
-	left: 0;
+	left: -170px;
 }
 .welcome_content {
 	max-width: 460px;
@@ -328,6 +323,7 @@ h2 {
 	.welcome_text {
 		font-family: "Aventura";
 		font-size: 36px;
+		font-weight: bold;
 	}
 	.welcome_man {
 		width: 100%;
@@ -353,6 +349,9 @@ h2 {
 		width: 140%;
 		left: 50%;
 		transform: translate(-50%, 0);
+	}
+	.welcome_content {
+		padding: 20px 0 17px;
 	}
 }
 
