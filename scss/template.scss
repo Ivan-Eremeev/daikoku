@@ -158,7 +158,7 @@ h2 {
 		&_content {
 			width: 100%;
 			max-width: 100%;
-			padding: 20px 30px 17px;
+			padding: 20px 30px 100px;
 			background-color: transparent;
 			text-align: center;
 		}
@@ -178,20 +178,14 @@ h2 {
 		&_man {
 			width: 100%;
 			left: 0;
-			bottom: 100px;
+			bottom: 130px;
 			text-align: center;
 		}
 		&_btn {
-			display: inline-block;
+			max-width: 380px;
 			margin-left: auto;
 			margin-right: auto;
 			margin-top: 270px;
-			padding: 0;
-			background-color: transparent;
-			box-shadow: none;
-			img {
-				display: block;
-			}
 		}
 	}
 	@media (max-width: $break_xs) {
@@ -199,9 +193,6 @@ h2 {
 			width: 140%;
 			left: 50%;
 			transform: translate(-50%,0);
-		}
-		&_content {
-			padding: 20px 0 17px;
 		}
 	}
 }
