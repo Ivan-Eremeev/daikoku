@@ -6,8 +6,8 @@
 
 // Переменные для кастомизации Mixingrid
 $columns: 12; // Колличество колонок
-$max-width: 1200px; // Максимальная ширина контейнера
-$gutter: 15px; // Расстояние между колонками
+$max-width: 1450px; // Максимальная ширина контейнера
+$gutter: 35px; // Расстояние между колонками
 $offset: 30px; // Поля контейнера
 $offset-sm: 15px; // Поля контейнера на мобилке
 // Брэйкпоинты
@@ -25,10 +25,14 @@ $break_xs: 500px;
 // $gutter: $grid-gutter-width; // Переменная для задания отступов равных междуколоночным
 
 // Шрифты
-// @include font-face("EastAP", "../fonts/EastAP/EastAP", bold, italic);
+@include font-face("SuezOne", "../fonts/SuezOne-Regular", normal, normal);
+@include font-face("Muli", "../fonts/Muli-Regular", normal, normal);
+@include font-face("Muli", "../fonts/Muli-Bold", bold, normal);
+@include font-face("BebasNeue", "../fonts/BebasNeueRegular", normal, normal);
+@include font-face("BebasNeue", "../fonts/BebasNeueBold", bold, normal);
 
 // Цвета
-// $black: #000;
+$black: #000;
 
 // Блоки стилей
 @import 'template';

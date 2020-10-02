@@ -16,17 +16,86 @@ block style-libs
 
 block content
 
-	.page
+	include blocks/header.jade
 
-		include blocks/header.jade
-		
-		.content
+	.bg-block
+
+		// welcome
+		.welcome
+			.welcome_man
+				img(src="img/man.png", alt="man")
 			.wrapper
-        
-				
-				// /google-map
+				.welcome_content
+					img(src="img/welcome1.png", alt="").welcome_img
+					p.welcome_text UP TO
+					img(src="img/welcome2.png", alt="").welcome_img
+					p.welcome_text + 100 FREE SPINS<br>ON FIRST DEPOSIT
+					a(href="#").welcome_btn Claim Now
+		// /welcome
+
+		// coins
+		.coins
+			.wrapper
+				.row
+					.coins_col
+						.coin.coin--arrow
+							.coin_block
+								.coin_num 1
+								.coin_img
+									img(src="img/coin1.png", alt="")
+							.coin_content
+								p.coin_name REGISTER
+								p.coin_text Quick and easy signup
+							.coin_arrow
+					.coins_col
+						.coin.coin--arrow
+							.coin_block
+								.coin_num 2
+								.coin_img
+									img(src="img/coin2.png", alt="")
+							.coin_content
+								p.coin_name Get your bonus
+								p.coin_text Make your 1st deposit &amp; claim
+							.coin_arrow
+					.coins_col
+						.coin
+							.coin_block
+								.coin_num 3
+								.coin_img
+									img(src="img/coin3.png", alt="")
+							.coin_content
+								p.coin_name Have fun
+								p.coin_text And let the rewards start rolling in!
+		//	/coins
+
+	// icons
+	.icons
+		.wrapper
+			.icons_icon
+				img(src="img/18plus.png", alt="icon")
+			.icons_icon
+				img(src="img/platforms.png", alt="icon")
+			.icons_icon
+				img(src="img/icon1.jpg", alt="icon")
+			.icons_icon
+				img(src="img/icon2.jpg", alt="icon")
+			.icons_icon
+				img(src="img/icon3.jpg", alt="icon")
+			.icons_icon
+				img(src="img/icon4.jpg", alt="icon")
+			.icons_icon
+				img(src="img/icon5.jpg", alt="icon")
+			.icons_icon
+				img(src="img/icon6.jpg", alt="icon")
+			.icons_icon
+				img(src="img/icon7.jpg", alt="icon")
+			.icons_icon
+				img(src="img/icon8.jpg", alt="icon")
+			.icons_icon
+				img(src="img/monitors.png", alt="icon")
+	//	/icons
 			
-		include blocks/footer.jade
+	include blocks/footer.jade
 
 block js-libs
 	script(src="js/jquery.min.js")
