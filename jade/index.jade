@@ -23,14 +23,19 @@ block content
 		// welcome
 		.welcome
 			.welcome_man
-				img(src="img/man.png", alt="man")
+				img(src="img/man.png", alt="man").mobile-hide
+				img(src="img/man-mob.png", alt="man").mobile-visible
 			.wrapper
 				.welcome_content
-					img(src="img/welcome1.png", alt="").welcome_img
+					img(src="img/welcome1.png", alt="").welcome_img.mobile-hide
+					img(src="img/welcome1-mob.png", alt="").welcome_img.mobile-visible
 					p.welcome_text UP TO
-					img(src="img/welcome2.png", alt="").welcome_img
+					img(src="img/welcome2.png", alt="").welcome_img.mobile-hide
+					img(src="img/welcome2-mob.png", alt="").welcome_img.mobile-visible
 					p.welcome_text + 100 FREE SPINS<br>ON FIRST DEPOSIT
-					a(href="#").welcome_btn Claim Now
+					a(href="#").welcome_btn
+						span.mobile-hide Claim Now
+						img(src="img/btn.png", alt="").mobile-visible
 		// /welcome
 
 		// coins
@@ -50,8 +55,8 @@ block content
 					.coins_col
 						.coin.coin--arrow
 							.coin_block
-								.coin_num 2
-								.coin_img
+								.coin_num.coin_num--2 2
+								.coin_img.coin_img--2
 									img(src="img/coin2.png", alt="")
 							.coin_content
 								p.coin_name Get your bonus
@@ -73,7 +78,7 @@ block content
 		.wrapper
 			.icons_icon
 				img(src="img/18plus.png", alt="icon")
-			.icons_icon
+			.icons_icon.icons_icon--platforms
 				img(src="img/platforms.png", alt="icon")
 			.icons_icon
 				img(src="img/icon1.jpg", alt="icon")
@@ -91,7 +96,7 @@ block content
 				img(src="img/icon7.jpg", alt="icon")
 			.icons_icon
 				img(src="img/icon8.jpg", alt="icon")
-			.icons_icon
+			.icons_icon.icons_icon--monitors
 				img(src="img/monitors.png", alt="icon")
 	//	/icons
 			
