@@ -3,6 +3,13 @@
 		font-family: $font-family;
 		font-weight: $weight;
 		font-style: $style;
-		src: font-url('#{$file-path}.ttf');
+
+		@if $asset-pipeline == true {
+			src: font-url('#{$file-path}.eot');
+			src: font-url('#{$file-path}.eot?#iefix') format('embedded-opentype'),font-url('#{$file-path}.ttf') format('truetype'), font-url('#{$file-path}.svg') format('svg');
+		} @else {
+			src: url('#{$file-path}.eot');
+			src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'), url('#{$file-path}.ttf') format('truetype'), url('#{$file-path}.svg') format('svg');
+		}
 	}
 }

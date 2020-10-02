@@ -83,37 +83,43 @@ h1, h2, h3 {
 	font-family: "SuezOne";
 	font-weight: normal;
 	font-style: normal;
-	src: font-url("../fonts/SuezOne-Regular.ttf");
+	src: url("../fonts/SuezOne-Regular.eot");
+	src: url("../fonts/SuezOne-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/SuezOne-Regular.ttf") format("truetype"), url("../fonts/SuezOne-Regular.svg") format("svg");
 }
 @font-face {
 	font-family: "Muli";
 	font-weight: normal;
 	font-style: normal;
-	src: font-url("../fonts/Muli-Regular.ttf");
+	src: url("../fonts/Muli-Regular.eot");
+	src: url("../fonts/Muli-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli-Regular.ttf") format("truetype"), url("../fonts/Muli-Regular.svg") format("svg");
 }
 @font-face {
 	font-family: "Muli";
 	font-weight: bold;
 	font-style: normal;
-	src: font-url("../fonts/Muli-Bold.ttf");
+	src: url("../fonts/Muli-Bold.eot");
+	src: url("../fonts/Muli-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli-Bold.ttf") format("truetype"), url("../fonts/Muli-Bold.svg") format("svg");
 }
 @font-face {
 	font-family: "BebasNeue";
 	font-weight: normal;
 	font-style: normal;
-	src: font-url("../fonts/BebasNeueRegular.ttf");
+	src: url("../fonts/BebasNeueRegular.eot");
+	src: url("../fonts/BebasNeueRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeueRegular.ttf") format("truetype"), url("../fonts/BebasNeueRegular.svg") format("svg");
 }
 @font-face {
 	font-family: "BebasNeue";
 	font-weight: bold;
 	font-style: normal;
-	src: font-url("../fonts/BebasNeueBold.ttf");
+	src: url("../fonts/BebasNeueBold.eot");
+	src: url("../fonts/BebasNeueBold.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeueBold.ttf") format("truetype"), url("../fonts/BebasNeueBold.svg") format("svg");
 }
 @font-face {
 	font-family: "Aventura";
 	font-weight: bold;
 	font-style: normal;
-	src: font-url("../fonts/Aventura-Bold.ttf");
+	src: url("../fonts/Aventura-Bold.eot");
+	src: url("../fonts/Aventura-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Aventura-Bold.ttf") format("truetype"), url("../fonts/Aventura-Bold.svg") format("svg");
 }
 html.lock {
 	overflow: hidden;
@@ -225,6 +231,9 @@ h2 {
 }
 
 .bg-block {
+	max-width: 1900px;
+	margin-left: auto;
+	margin-right: auto;
 	background-image: url(../img/bg.jpg);
 	background-size: cover;
 	background-position: center;
@@ -317,6 +326,9 @@ h2 {
 		font-family: "Aventura";
 		font-size: 36px;
 		font-weight: bold;
+	}
+	.welcome_text span {
+		font-family: "Muli";
 	}
 	.welcome_man {
 		width: 100%;
