@@ -340,10 +340,10 @@ h2 {
 		max-width: 380px;
 		margin-left: auto;
 		margin-right: auto;
-		margin-top: 270px;
+		margin-top: 300px;
 	}
 }
-@media (max-width: 500px) {
+@media (max-width: 450px) {
 	.welcome_man {
 		width: 120%;
 		left: 50%;
@@ -353,7 +353,12 @@ h2 {
 		font-size: 16px;
 	}
 	.welcome_btn {
-		margin-top: 190px;
+		margin-top: 250px;
+	}
+}
+@media (max-width: 350px) {
+	.welcome_btn {
+		margin-top: 200px;
 	}
 }
 
@@ -468,7 +473,7 @@ h2 {
 		transform: translate(50%, 0) rotate(90deg);
 	}
 }
-@media (max-width: 500px) {
+@media (max-width: 450px) {
 	.coin {
 		padding-left: 0;
 	}

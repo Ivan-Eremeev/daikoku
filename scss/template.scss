@@ -185,7 +185,7 @@ h2 {
 			max-width: 380px;
 			margin-left: auto;
 			margin-right: auto;
-			margin-top: 270px;
+			margin-top: 300px;
 		}
 	}
 	@media (max-width: $break_xs) {
@@ -198,7 +198,12 @@ h2 {
 			font-size: 16px;
 		}
 		&_btn {
-			margin-top: 190px;
+			margin-top: 250px;
+		}
+	}
+	@media (max-width: 350px) {
+		&_btn {
+			margin-top: 200px;
 		}
 	}
 }
