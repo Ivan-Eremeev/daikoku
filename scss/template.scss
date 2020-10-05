@@ -190,7 +190,7 @@ h2 {
 	}
 	@media (max-width: $break_xs) {
 		&_man {
-			width: 120%;
+			width: 90%;
 			left: 50%;
 			transform: translate(-50%,0);
 		}
@@ -198,12 +198,12 @@ h2 {
 			font-size: 16px;
 		}
 		&_btn {
-			margin-top: 250px;
+			margin-top: 180px;
 		}
 	}
 	@media (max-width: 350px) {
 		&_btn {
-			margin-top: 200px;
+			margin-top: 140px;
 		}
 	}
 }

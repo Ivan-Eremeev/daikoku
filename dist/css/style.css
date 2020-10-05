@@ -345,7 +345,7 @@ h2 {
 }
 @media (max-width: 450px) {
 	.welcome_man {
-		width: 120%;
+		width: 90%;
 		left: 50%;
 		transform: translate(-50%, 0);
 	}
@@ -353,12 +353,12 @@ h2 {
 		font-size: 16px;
 	}
 	.welcome_btn {
-		margin-top: 250px;
+		margin-top: 180px;
 	}
 }
 @media (max-width: 350px) {
 	.welcome_btn {
-		margin-top: 200px;
+		margin-top: 140px;
 	}
 }
 
